@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Consolas;
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
 }
+/*header*/
 header {
   position: fixed;
   top: 0;
@@ -30,11 +33,13 @@ a:hover {
 .header-logo {
   margin-right: 450px;
 }
+
+/*front page*/
 .front-page {
   text-align: center;
   text-transform: uppercase;
   padding: 300px 200px;
-  background-image:url(../photos/journey-g165ea0e8e_1920.jpg);
+  background-image:url(../photos/главная.jpg);
 }
 .front-page-name {
   font-size: 70px;
@@ -45,7 +50,7 @@ a:hover {
   padding-bottom: 15px;
   font-weight: bold;
   font-size: 50px;
-  font-style: italic;
+  color: white;
 }
 .front-page-btn {
   background: none;
@@ -60,26 +65,23 @@ a:hover {
   border: solid yellow 1px;
   cursor: pointer;
 }
+
+/*цитата*/
 .purpose {
-  padding: 50px 150px;
-  background-color:white;
+  padding: 60px 30px;
   text-align: center;
+  font-size: 60px;
 }
 .purpose-name {
   padding-bottom: 40px;
 }
-.tours {
-  padding: 30px;
-}
+
+/*tours*/
 .tours-baikal {
   display: flex;
   align-items: flex-start;
   margin: 40px;
-}
-.tours-info {
-  vertical-align: center;
-  margin-left: 180px;
-  margin-right: 180px
+
 }
 .tours-image img {
   width: 500px;
@@ -88,8 +90,15 @@ a:hover {
   box-shadow: 14px 7px 19px 0 rgba(34, 60, 80, 0.2);
 }
 .tours-image {
-  margin-left: 180px;
-  margin-right: 180px;
+  margin: 10px 20px 10px 20px;
+}
+.tours-info {
+  padding-top: 70px;
+  font-size: 25px;
+}
+.tours-kenia,.tours-info{
+  padding-bottom: 70px;
+  padding-left: 15px;
 }
 .tours-kenia {
   display: flex;
@@ -101,7 +110,7 @@ a:hover {
   border: solid 1px black;
   color: black;
   padding: 10px;
-  font-size: 15px;
+  font-size: 25px;
   margin-top: 10px;
 }
 .another-page-btn:hover {
@@ -114,6 +123,37 @@ a:hover {
   align-items: flex-start;
   margin: 40px;
 }
+/*наши преимущества*/
+.why-we {
+  display: flex;
+  justify-content: center;
+  color: yellow;
+  background-color: gray;
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+/*особенности компании*/
+.plus {
+  display: flex;
+  margin: 10px 40px 40px 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+
+}
+.plus-our-advantages {
+  width: 500px;
+  text-align: center;
+  padding: 30px;
+}
+.plus-our-advantages img {
+  width: 150px;
+  height: 150px;
+  margin: 40px 0;
+}
+
+/*footer*/
 .footer {
   background-color: black;
   color: white;
