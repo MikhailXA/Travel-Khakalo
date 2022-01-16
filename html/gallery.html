@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project2</title>
+  <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<header id="slide" class="nav">
+  <nav id="w">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../png/лого.png" alt="logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="tours.html">tours</a>
+      </li>
+      <li>
+        <a href="about.html">about us</a>
+      </li>
+      <li>
+        <a href="gallery.html">gallery</a>
+      </li>
+      <li>
+        <a href="contacts.html">contacts</a>
+      </li>
+    </ul>
+    <div class="burger" onclick="openNav()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="tours.html">Tours</a>
+        <a href="about.html">About us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<div class="g">
+  <div class="g-sub">
+    <h2>Взгляните на мир нашими глазами</h2>
+  </div>
+</div>
+<section class="portfolio">
+  <div class="gallery">
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея1.jpeg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-1">zoom image-1</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея2.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-2">zoom image-2</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея3.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-3">zoom image-3</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея4.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-4">zoom image-4</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея5.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-5">zoom image-5</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея6.jpg" alt="gallery">
+      <div class="hover-buttons" style="visibility: visible">
+        <a class="zoom" href="#img-6">zoom image-6</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея7.jpg" alt="gallery">
+      <div class="hover-buttons" style="visibility: visible">
+        <a class="zoom" href="#img-7">zoom image-6</a>
+
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/гарея8.jpg" alt="gallery">
+      <div class="hover-buttons" style="visibility: visible">
+        <a class="zoom" href="#img-8">zoom image-6</a>
+
+      </div>
+    </div>
+
+    <div class="overlayx"></div>
+    <div class="popup">
+      <img id="img-1" class="full-image" src="../photo/галерея1.jpeg" alt="gallery">
+      <img id="img-2" class="full-image" src="../photo/галерея2.jpg" alt="gallery">
+      <img id="img-3" class="full-image" src="../photo/галерея3.jpg" alt="gallery">
+      <img id="img-4" class="full-image" src="../photo/галерея4.jpg" alt="gallery">
+      <img id="img-5" class="full-image" src="../photo/галерея5.jpg" alt="gallery">
+      <img id="img-6" class="full-image" src="../photo/галерея6.jpg" alt="gallery">
+      <img id="img-7" class="full-image" src="../photo/галерея7.jpg" alt="gallery">
+      <img id="img-8" class="full-image" src="../photo/гарея8.jpg" alt="gallery">
+      <span class="close">&#10006;</span>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer">
+    <div class="footer-name">
+      <div class="logo">
+        <!--        <a href="#">travel</a>-->
+        <img src="../png/лого.png" alt="logo">
+      </div>
+      <h3>travel</h3>
+    </div>
+    <div class="footer-sections">
+      <div class="footer-section-questions">
+        <p href="#">get to know</p>
+        <div class="string"></div>
+        <a href="#">contacts</a>
+        <a href="#">FAQs</a>
+        <a href="#">warrantly</a>
+      </div>
+      <div class="footer-section-email">
+        <p href="#">newsletter</p>
+        <div class="string"></div>
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="../png/вотсап.png" alt="icon"></a>
+      <a href="#"><img src="../png/инста.png" alt="icon"></a>
+      <a href="#"><img src="../png/фейс.png" alt="icon"></a>
+      <a href="#"><img src="../png/pngwing.com.png" alt="icon"></a>
+      <a href="#"><img src="../png/телега.png" alt="icon"></a>
+    </div>
+    <h6>2022,Grodno.ItAcademy.All rights reserved</h6>
+  </div>
+</footer>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/gallery.js"></script>
+
+</body>
+</html>
