@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="main">
+  <header id="slide" class="nav">
+    <nav id="w">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../png/лого.png" alt="logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="tours.html">tours</a>
+        </li>
+        <li>
+          <a href="about.html">about us</a>
+        </li>
+        <li>
+          <a href="gallery.html">gallery</a>
+        </li>
+        <li>
+          <a href="contacts.html">contacts</a>
+        </li>
+      </ul>
+      <div class="burger" onclick="openNav()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="tours.html">Tours</a>
+          <a href="about.html">About us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contacts.html">Contacts</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <div id="slogan" class="slogan">
+    <h5><div class="q"></div>join us<div class="q"></div></h5>
+    <h2>It's great time<br>to start living now</h2>
+    <a class="more" href="#plus">know more</a>
+  </div>
+</section>
+
+<button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
+<section id="plus" class="pluses">
+  <div class="container">
+    <div class="hero-text">
+      <h3>Why travel?</h3>
+      <p>We througly take care of eache of our clients and their comfort during trip. Our company is a partner of more than a thousand hotels across the country, where our customers will be provided with special favorable conditions.</p>
+    </div>
+    <div class="blo">
+      <div class="block">
+        <img class="block-photo" src="../png/зущзду.png" alt="customers">
+        <h4 class="block-number">10000</h4>
+        <p class="subnumber">Happy customers</p>
+        <p>We have over 10.000 happy customers who have already used our service</p>
+      </div>
+      <div class="block">
+        <img class="block-photo" src="../png/отель.png" alt="hotel">
+        <h4 class="block-number">247</h4>
+        <p class="subnumber">Comfortable hotels</p>
+        <p>Best hotels are equipped with all the necessary amenities for a comfortable journey</p>
+      </div>
+      <div class="block">
+        <img class="block-photo" src="../png/мир.png" alt="world">
+        <h4 class="block-number">3860</h4>
+        <p class="subnumber">Completed tours</p>
+        <p>We have already organised 3860 tours in 86 cities and more than 450 landmarks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tours">
+  <div>
+    <img class="bet" src="../photo/6.png" alt="gor">
+  </div>
+  <div class="destination">
+    <div class="destination-info">
+      <h5 class="destination-info-name"><div class="q"></div>Start your journey<div class="q"></div></h5>
+      <p class="destination-info-subname">Мы создаём незабываемые эмоции для всех участников</p>
+      <p class="destination-info-description">Нам нравится всё: карабкаться в горы, идти на яхте с чувством безграничной свободы, гнать вперёд на авто и ощущать драйв жизни. Но больше всего мы любим объединять людей в путешествиях. Это и есть наша философия — мы ищем людей похожих на нас, любящих жизнь и ценящих каждое мгновение.</p>
+      <a class="destination-info-button" href="tours.html">choose your tour</a>
+    </div>
+    <div class="destination-photo">
+      <img src="../photo/гирлз.png" alt="girls">
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer">
+    <div class="footer-name">
+      <div class="logo">
+        <!--        <a href="#">travel</a>-->
+        <img src="../png/лого.png" alt="logo">
+      </div>
+      <h3>travel</h3>
+    </div>
+    <div class="footer-sections">
+      <div class="footer-section-questions">
+        <p href="#">get to know</p>
+        <div class="string"></div>
+        <a href="#">contacts</a>
+        <a href="#">FAQs</a>
+        <a href="#">warrantly</a>
+      </div>
+      <div class="footer-section-email">
+        <p href="#">newsletter</p>
+        <div class="string"></div>
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
+    </div>
+  <div class="footer-social">
+    <a href="#"><img src="../png/вотсап.png" alt="icon"></a>
+    <a href="#"><img src="../png/инста.png" alt="icon"></a>
+    <a href="#"><img src="../png/фейс.png" alt="icon"></a>
+    <a href="#"><img src="../png/pngwing.com.png" alt="icon"></a>
+    <a href="#"><img src="../png/телега.png" alt="icon"></a>
+  </div>
+  <h6>2022,Grodno.ItAcademy.All rights reserved</h6>
+  </div>
+</footer>
+
+<script src="../js/index.js"></script>
+</body>
+</html>

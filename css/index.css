@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  /*overflow-x: hidden;*/
+}
+
+.main {
+  /* The image used */
+  background-image: url("../photo/lady1.jpg");
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Position the navbar container inside the image */
+header {
+  position: fixed;
+  transition: top 1s;
+}
+.nav {
+  position: absolute;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  /*background-color: black;*/
+  opacity: 1;
+}
+.logo a {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 37%;
+}
+.nav-links li {
+  list-style: none;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.logo img {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+}
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav-links a:after {
+  position: absolute;
+  left: 0;
+  content:'';
+  height: 20px;
+  width: 0;
+  margin-top: 5px;
+  border-bottom: solid 2px darkgoldenrod;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.nav-links a:hover:after {
+  width: 100%;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1500px){
+  .nav-links {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1000px){
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 0;
+  top: 0;
+  /*background-color: rgb(0,0,0); !* Black fallback color *!*/
+  background-color: rgba(0,0,0, 0.99);
+
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 1s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: white;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+ /*pluses*/
+.pluses {
+  /* Full height */
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #324462;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #f1f1f1;
+  padding: 20px;
+}
+.blo {
+  display: flex;
+}
+.block {
+  padding: 20px;
+  margin: 5px 30px 50px 30px;
+}
+.block:hover {
+  box-shadow: 0 5px 10px 4px rgba(176, 159, 91, 0.2);
+  transform: translateY(-2px);
+  border-radius: 10px;
+}
+.block-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+.hero-text {
+  text-align: center;
+  color: white;
+  margin: 100px 0 40px;
+  width: 60%;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: darkgoldenrod;
+}
+h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: darkgoldenrod;
+}
+.subnumber {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .blo {
+    flex-direction: column;
+  }
+  .slogan h2 {
+    font-size: 40px;
+
+  }
+}
+   /*main page*/
+.slogan {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  text-align: center;
+  transition: opacity 3s ease-out;
+
+}
+.q {
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin: 0 10px 0 10px ;
+}
+h5 {
+  color: darkgoldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+
+}
+h2 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin: 5px;
+}
+.more {
+  margin-top: 100px;
+  border: 2px solid darkgoldenrod;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  color: darkgoldenrod;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  text-decoration: none;
+}
+.more:hover {
+  background-color: white;
+  border: 2px solid white;
+}
+
+#tours {
+  background-color: #324462;
+}
+.destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px 100px;
+  text-align: left;
+}
+
+
+.destination-photo img {
+  width: 600px;
+  height: 400px;
+  object-fit: fill;
+}
+#slogan .more a:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.destination-info-button {
+  background: none;
+  text-decoration: none;
+
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  color: darkgoldenrod;
+  margin: 20px;
+  border: 2px solid darkgoldenrod;
+  border-radius: 5px;
+}
+.destination-info-button:hover {
+  background-color: white;
+  border: 2px solid white;
+
+}
+.destination-info-description {
+  font-size: 20px;
+  margin: 10px;
+}
+.destination-info-subname {
+  margin: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .destination {
+    flex-direction: column;
+  }
+  .destination-photo img {
+    margin-top: -80px;
+    width: 530px;
+  }
+}
+.bet {
+  width: 100%;
+}
+.destination-info-name {
+  text-align: center;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #324462;
+  text-align: center;
+  border-top: 3px solid darkgoldenrod;
+}
+.footer-sections {
+  list-style-type: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.footer-sections a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  padding: 15px;
+}
+.string {
+  width: 90%;
+  height: 3px;
+  background-color: black;
+}
+.footer-section-questions {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section-questions a:hover {
+  color: white;
+}
+.footer-section-email {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.footer img {
+  width: 50px;
+  height: 50px;
+}
+input {
+  margin-top: 20px;
+  width: 70%;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.footer-name {
+  margin-top: 20px;
+}
+.footer-name h3 {
+  text-transform: uppercase;
+}
+.footer-social img {
+  margin: 0 10px 0 10px;
+  padding: 3px;
+}
+.footer-social img:hover{
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+h6 {
+  font-size: 15px;
+  color: darkgoldenrod;
+  margin: 10px 0 20px;
+}
+
+#myTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: darkgoldenrod; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
