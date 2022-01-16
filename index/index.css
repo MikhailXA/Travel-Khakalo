@@ -5,6 +5,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
   font-family: 'Caveat', cursive;
   font-size: 25px;
+  scroll-behavior: smooth;
 }
 /*header*/
 header {
@@ -40,6 +41,7 @@ a:hover {
   text-transform: uppercase;
   padding: 300px 200px;
   background-image:url(../photos/главная.jpg);
+  height: 100%;
 }
 .front-page-name {
   font-size: 70px;
@@ -53,17 +55,20 @@ a:hover {
   color: white;
 }
 .front-page-btn {
-  background: none;
   font-weight: bold;
-  border: solid white 1px;
-  font-size: 20px;
-  padding: 5px;
-  text-transform: uppercase;
-}
-.front-page-btn:hover {
   background-color: yellow;
   border: solid yellow 1px;
+  border-radius: 10px;
+  font-size: 40px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  
+}
+.front-page-btn:hover {
   cursor: pointer;
+  transform: translateY(-10px) scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 /*цитата*/
@@ -93,7 +98,9 @@ a:hover {
   margin: 10px 20px 10px 20px;
 }
 .tours-info {
+  text-align: end;
   padding-top: 70px;
+  padding-right: 30px;
   font-size: 25px;
 }
 .tours-kenia,.tours-info{
@@ -140,7 +147,6 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px;
-
 }
 .plus-our-advantages {
   width: 500px;
@@ -151,6 +157,7 @@ a:hover {
   width: 150px;
   height: 150px;
   margin: 40px 0;
+  border-radius: 50%;
 }
 
 /*footer*/
