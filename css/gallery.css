@@ -6,12 +6,29 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.nav {
-  background-color: rgba(255,255,255,0.9);
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+
+  background-color: transparent;
+  color: white;
 }
-.g {
+.discover {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-style: oblique;
+}
+
+
+.tour {
   /* The image used */
-  background-image: url("../photo/галер.jpg");
+  background-image: url("../photo/gallery.jpg");
   /* Full height */
   height: 100vh;
   z-index: -1;
@@ -100,7 +117,6 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  border: 1px solid white;
   box-sizing: border-box;
   border-radius: 50%;
   z-index: 2;
@@ -182,4 +198,36 @@ body {
     max-height: 260px;
     min-height: 260px;
   }
+}
+.phylosophy {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.phylosophy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vertical {
+  writing-mode: vertical-lr;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-right: 20px;
+
+}
+.phylosophy-flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.phylosophy-text1 {
+  margin-top: 100px;
+}
+.phylosophy-text1-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+span {
+  font-weight: bold;
 }

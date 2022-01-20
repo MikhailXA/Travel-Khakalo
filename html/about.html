@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Travel</title>
   <link rel="stylesheet" href="../css/about.css">
   <link rel="stylesheet" href="../css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../png/лого.png">
 </head>
 <body>
 <header id="slide" class="nav">
@@ -16,16 +18,16 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="tours.html">tours</a>
+        <a href="tours.html">туры</a>
       </li>
       <li>
-        <a href="about.html">about us</a>
+        <a href="about.html">о нас</a>
       </li>
       <li>
-        <a href="gallery.html">gallery</a>
+        <a href="gallery.html">галерея</a>
       </li>
       <li>
-        <a href="contacts.html">contacts</a>
+        <a href="contacts.html">контакты</a>
       </li>
     </ul>
     <div class="burger" onclick="openNav()">
@@ -40,34 +42,18 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="tours.html">Tours</a>
-        <a href="about.html">About us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contacts.html">Contacts</a>
+        <a href="tours.html">Туры</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
       </div>
 
     </div>
   </nav>
 </header>
-<div class="g">
-  <h2>Сообщество людей любящих путешествовать</h2>
-  <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides-fade">
-      <img src="../photo/слайдер1.jpg" alt="slider">
-      <div class="text">Норвегия</div>
-    </div>
-
-    <div class="mySlides-fade">
-      <img src="../photo/слайдер2.jpg" alt="slider">
-      <div class="text">Фьорды</div>
-    </div>
-
-    <div class="mySlides-fade">
-      <img src="../photo/слайдер3.jpg" alt="slider">
-      <div class="text">Северное сияние</div>
-    </div>
+<div class="tour">
+  <div class="text-block">
+    <p class="discover">Выберете эмоции, которые хотите испытать, обо всём остальном позаботимся мы.</p>
   </div>
 </div>
 <section class="phylosophy">
@@ -79,10 +65,9 @@
       <p class="phylosophy-text1-info">Мы подходим к организации так, чтобы за минимальное время создать программу «максимум» — открыть самые красивые и отдаленные уголки планеты и сделать это настоящим приключением!</p>
   </div>
   </div>
-  <div class="phylosophy-text2">
-    <p class="phylosophy-text2-title">Мы создаём незабываемые эмоции для всех участников</p>
-    <p class="phylosophy-text1-info">Нам нравится всё: карабкаться в горы, идти на яхте с чувством безграничной свободы, гнать вперёд на авто и ощущать драйв жизни.<br> Но больше всего мы любим объединять людей в путешествиях. Это и есть наша философия — мы ищем людей похожих на нас, любящих жизнь и ценящих каждое мгновение.</p>
-  </div>
+</section>
+<section class="parallax">
+  <div class="parallax-photo1"></div>
 </section>
 <section class="phylosophy">
   <div class="phylosophy-flex">
@@ -93,36 +78,8 @@
     </div>
   </div>
 </section>
-
-<section class="team">
-<div class="buttons-container">
-  <button id="left" class="btn">&lt;</button>
-</div>
-<div class="carousel">
-  <div class="image-container" id="imgs">
-    <div class="men">
-      <img src="../photo/tomhanks_cover.jpg" alt="first-image"/>
-      <div class="men-info"></div>
-    </div>
-    <div class="men">
-      <img src="../photo/пит.jpg" alt="first-image"/>
-      <div class="men-info"></div>
-    </div>
-    <div class="men">
-      <img src="../photo/грилз.jpg" alt="first-image"/>
-      <div class="men-info"></div>
-    </div>
-    <div class="men">
-      <img src="../photo/я%20ш.jpg" alt="first-image"/>
-      <div class="men-info"></div>
-    </div>
-  </div>
-
-
-</div>
-<div class="buttons-container">
-    <button id="right" class="btn">&gt;</button>
-</div>
+<section class="parallax">
+  <div class="parallax-photo2"></div>
 </section>
 <section class="phylosophy">
   <div class="phylosophy-flex">
@@ -133,7 +90,9 @@
     </div>
   </div>
 </section>
-
+<section class="parallax">
+  <div class="parallax-photo3"></div>
+</section>
 <footer>
   <div class="footer">
     <div class="footer-name">
@@ -168,6 +127,7 @@
   </div>
 </footer>
 <script src="../js/about.js"></script>
+<script src="../js/index.js"></script>
 
 </body>
 </html>

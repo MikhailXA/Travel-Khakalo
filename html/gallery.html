@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project2</title>
+  <title>Travel</title>
   <link rel="stylesheet" href="../css/gallery.css">
   <link rel="stylesheet" href="../css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../png/лого.png">
 </head>
 <body>
 <header id="slide" class="nav">
@@ -17,16 +19,16 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="tours.html">tours</a>
+        <a href="tours.html">туры</a>
       </li>
       <li>
-        <a href="about.html">about us</a>
+        <a href="about.html">о нас</a>
       </li>
       <li>
-        <a href="gallery.html">gallery</a>
+        <a href="gallery.html">галерея</a>
       </li>
       <li>
-        <a href="contacts.html">contacts</a>
+        <a href="contacts.html">контакты</a>
       </li>
     </ul>
     <div class="burger" onclick="openNav()">
@@ -41,75 +43,83 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <a href="tours.html">Tours</a>
-        <a href="about.html">About us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contacts.html">Contacts</a>
+        <a href="tours.html">Туры</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
       </div>
 
     </div>
   </nav>
 </header>
-<div class="g">
-  <div class="g-sub">
-    <h2>Взгляните на мир нашими глазами</h2>
+<div class="tour">
+  <div class="text-block">
+    <p class="discover">discover</p>
   </div>
 </div>
+<section class="phylosophy">
+  <div class="phylosophy-flex">
+    <h4 class="vertical">Фото</h4>
+    <div class="phylosophy-text1">
+      <p class="phylosophy-text1-title">Загляните в путешествия<br><span>через удивительные фотоотчёты</span></p>
+    </div>
+  </div>
+</section>
 <section class="portfolio">
   <div class="gallery">
     <div class="image-container">
       <img class="preview" src="../photo/галерея1.jpeg" alt="gallery">
       <div class="hover-buttons">
-        <a class="zoom" href="#img-1">zoom image-1</a>
+        <a class="zoom" href="#img-1"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/галерея2.jpg" alt="gallery">
       <div class="hover-buttons">
-        <a class="zoom" href="#img-2">zoom image-2</a>
+        <a class="zoom" href="#img-2"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/галерея3.jpg" alt="gallery">
       <div class="hover-buttons">
-        <a class="zoom" href="#img-3">zoom image-3</a>
+        <a class="zoom" href="#img-3"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/галерея4.jpg" alt="gallery">
       <div class="hover-buttons">
-        <a class="zoom" href="#img-4">zoom image-4</a>
+        <a class="zoom" href="#img-4"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/галерея5.jpg" alt="gallery">
       <div class="hover-buttons">
-        <a class="zoom" href="#img-5">zoom image-5</a>
+        <a class="zoom" href="#img-5"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/галерея6.jpg" alt="gallery">
       <div class="hover-buttons" style="visibility: visible">
-        <a class="zoom" href="#img-6">zoom image-6</a>
+        <a class="zoom" href="#img-6"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/галерея7.jpg" alt="gallery">
       <div class="hover-buttons" style="visibility: visible">
-        <a class="zoom" href="#img-7">zoom image-6</a>
+        <a class="zoom" href="#img-7"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
     <div class="image-container">
       <img class="preview" src="../photo/гарея8.jpg" alt="gallery">
       <div class="hover-buttons" style="visibility: visible">
-        <a class="zoom" href="#img-8">zoom image-6</a>
+        <a class="zoom" href="#img-8"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
 
       </div>
     </div>
@@ -161,8 +171,10 @@
     <h6>2022,Grodno.ItAcademy.All rights reserved</h6>
   </div>
 </footer>
+<script src="../js/navBarHandler.js"></script>
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/gallery.js"></script>
+
 
 </body>
 </html>

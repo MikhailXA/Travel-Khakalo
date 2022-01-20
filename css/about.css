@@ -1,13 +1,39 @@
 * {
   box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+  height: 100%;
 }
-.g {
+#w {
+  justify-content: space-around;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(80%,-50%);
+
+  background-color: transparent;
+  color: white;
+}
+.discover {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: end;
+}
+
+
+.tour {
+  background-image: url("../photo/слайдер1.jpg");
   height: 100vh;
   z-index: -1;
   background-position: center;
@@ -15,53 +41,10 @@ body {
   background-size: cover;
   position: relative;
 }
-.g h2 {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%,-50%);
-  z-index: 1000;
-  text-align: center;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  height: 100vh;
-  position: relative;
-  margin: auto;
-}
-.mySlides {
-  display: none;
-}
-.mySlides-fade img {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-}
-/* Fading animation */
-.mySlides-fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 .phylosophy {
   display: flex;
   flex-direction: column;
-  width: 1300px;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -83,6 +66,9 @@ body {
 .phylosophy-text1 {
   margin-top: 100px;
 }
+.phylosophy-text1-info {
+  font-size: 35px;
+}
 .phylosophy-text1-title {
   font-size: 40px;
   margin-bottom: 20px;
@@ -94,12 +80,14 @@ span {
   font-style: italic;
   margin-bottom: 10px;
   color: #818181;
+  font-size: 35px;
 }
 
 .phylosophy-text2 {
   width: 90%;
   margin-top: 80px;
   padding-left: 50px;
+  font-size: 25px;
 
   border-left: 1px solid grey;
   align-items: flex-end;
@@ -110,74 +98,39 @@ span {
   font-size: 25px;
   margin-bottom: 10px;
 }
-.team {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  margin: 0;
-}
+
 .phylosophy {
   max-width: 700px;
   margin: 0 auto;
-}
-img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  margin-right: 500px;
-}
-.men {
-  width: 1000px;
-  display: flex;
-}
-.men-info {
-  width: 500px;
-  background-color: #bfc0c0;
-  color: black;
-  z-index: 100;
 
 }
-
-.carousel {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  height: 500px;
-  width: 1000px;
-  overflow: hidden;
-}
-
-.image-container {
-  display: flex;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
-}
-
-
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-  width: 100px;
-  height: 100px;
-
-}
-
-.btn {
-  background-color: rgba(0,0,0,0.7);
-  color: #fff;
-  border: transparent;
-
-  padding: 0.5rem;
-  cursor: pointer;
+.parallax-photo1 {
+  background-image: url("../photo/слайдер2.jpg");
+  z-index: 1000;
+  height: 50vh;
   width: 100%;
-  border-radius: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.btn:hover {
-  background-color: black;
+.parallax-photo2 {
+  background-image: url("../photo/слайдер3.jpg");
+  z-index: 1000;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.btn:focus {
-  outline: none;
+.parallax-photo3 {
+  background-image: url("../photo/галер.jpg");
+  z-index: 1000;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

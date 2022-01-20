@@ -1,4 +1,6 @@
-
+* {
+  font-family: 'Caveat', sans-serif;
+}
 
 /* Bottom right text */
 .text-block {
@@ -71,6 +73,7 @@
   align-content: space-around;
   padding: 10px;
   width: 33.33%;
+  font-size: 25px;
 }
 .trip-3 {
   width: 33.33%;
@@ -93,6 +96,7 @@
   text-transform: uppercase;
   padding: 10px;
   box-shadow: -6px 6px 14px 1px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
 }
 .trip-3 button:hover {
   transform: translateY(-2px);
