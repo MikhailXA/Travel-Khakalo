@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+#w {
+  justify-content: space-around;
+}
+/* MAIN PHOTO */
+.text-block {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(80%,-50%);
+  background-color: transparent;
+  color: white;
+}
+.discover {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: end;
+}
+.tour {
+  background-image: url("../photo/слайдер1.jpg");
+  height: 100vh;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*BLOCKS ABOUT OF COMPANY'S IDEA*/
+.phylosophy {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.vertical {
+  writing-mode: vertical-lr;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+.group {
+  width: 45%;
+}
+.phylosophy-flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.phylosophy-text1 {
+  margin-top: 100px;
+}
+.phylosophy-text1-info {
+  font-size: 35px;
+}
+.phylosophy-text1-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+span {
+  font-weight: bold;
+}
+.phylosophy-text1-sub {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #818181;
+  font-size: 35px;
+}
+.phylosophy-text2 {
+  width: 90%;
+  margin-top: 80px;
+  padding-left: 50px;
+  font-size: 25px;
+  border-left: 1px solid grey;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.phylosophy-text2-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.phylosophy {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/*PARALLAX*/
+.parallax-photo1 {
+  background-image: url("../photo/слайдер2.jpg");
+  z-index: 1000;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-photo2 {
+  background-image: url("../photo/слайдер3.jpg");
+  z-index: 1000;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-photo3 {
+  background-image: url("../photo/галер.jpg");
+  z-index: 1000;
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

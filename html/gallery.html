@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../png/лого.png">
+</head>
+<body>
+<header id="slide" class="nav">
+  <nav id="w">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../png/лого.png" alt="logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="tours.html">туры</a>
+      </li>
+      <li>
+        <a href="about.html">о нас</a>
+      </li>
+      <li>
+        <a href="gallery.html">галерея</a>
+      </li>
+      <li>
+        <a href="contacts.html">контакты</a>
+      </li>
+    </ul>
+    <div class="burger" onclick="openNav()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <div id="myNav" class="overlay">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="tours.html">Туры</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<div class="tour">
+  <div class="text-block">
+    <p class="discover">discover</p>
+  </div>
+</div>
+<section class="phylosophy">
+  <div class="phylosophy-flex">
+    <h4 class="vertical">Фото</h4>
+    <div class="phylosophy-text1">
+      <p class="phylosophy-text1-title">Загляните в путешествия<br><span>через удивительные фотоотчёты</span></p>
+    </div>
+  </div>
+</section>
+<section class="portfolio">
+  <div class="gallery">
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея1.jpeg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-1"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея2.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-2"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея3.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-3"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея4.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-4"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея5.jpg" alt="gallery">
+      <div class="hover-buttons">
+        <a class="zoom" href="#img-5"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея6.jpg" alt="gallery">
+      <div class="hover-buttons" style="visibility: visible">
+        <a class="zoom" href="#img-6"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/галерея7.jpg" alt="gallery">
+      <div class="hover-buttons" style="visibility: visible">
+        <a class="zoom" href="#img-7"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="preview" src="../photo/гарея8.jpg" alt="gallery">
+      <div class="hover-buttons" style="visibility: visible">
+        <a class="zoom" href="#img-8"><img src="../png/loop.png" alt="loop" height="40px" width="40px"></a>
+      </div>
+    </div>
+    <div class="overlayx"></div>
+    <div class="popup">
+      <img id="img-1" class="full-image" src="../photo/галерея1.jpeg" alt="gallery">
+      <img id="img-2" class="full-image" src="../photo/галерея2.jpg" alt="gallery">
+      <img id="img-3" class="full-image" src="../photo/галерея3.jpg" alt="gallery">
+      <img id="img-4" class="full-image" src="../photo/галерея4.jpg" alt="gallery">
+      <img id="img-5" class="full-image" src="../photo/галерея5.jpg" alt="gallery">
+      <img id="img-6" class="full-image" src="../photo/галерея6.jpg" alt="gallery">
+      <img id="img-7" class="full-image" src="../photo/галерея7.jpg" alt="gallery">
+      <img id="img-8" class="full-image" src="../photo/гарея8.jpg" alt="gallery">
+      <span class="close">&#10006;</span>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer">
+    <div class="footer-name">
+      <div class="logo">
+        <!--        <a href="#">travel</a>-->
+        <img src="../png/лого.png" alt="logo">
+      </div>
+      <h3>travel</h3>
+    </div>
+    <div class="footer-sections">
+      <div class="footer-section-questions">
+        <p href="#">get to know</p>
+        <div class="string"></div>
+        <a href="#">contacts</a>
+        <a href="#">FAQs</a>
+        <a href="#">warrantly</a>
+      </div>
+      <div class="footer-section-email">
+        <p href="#">newsletter</p>
+        <div class="string"></div>
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="../png/вотсап.png" alt="icon"></a>
+      <a href="#"><img src="../png/инста.png" alt="icon"></a>
+      <a href="#"><img src="../png/фейс.png" alt="icon"></a>
+      <a href="#"><img src="../png/pngwing.com.png" alt="icon"></a>
+      <a href="#"><img src="../png/телега.png" alt="icon"></a>
+    </div>
+    <h6>2022,Grodno.ItAcademy.All rights reserved</h6>
+  </div>
+</footer>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/gallery.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+* {
+  font-family: 'Caveat', sans-serif;
+}
+
+/* MAIN PHOTO */
+.text-block {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  background-color: transparent;
+  color: white;
+}
+.discover {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-style: oblique;
+}
+.tour {
+  background-image: url("../photo/Mindful-Travel-Header-scaled.jpg");
+  height: 100vh;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*LIST OF TRIPS*/
+.trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: white;
+  text-align: start;
+  width: 90%;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.trip:last-child {
+  border-bottom: none;
+}
+.trip-photo img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+.trip-photo {
+  width: 33.33%;
+}
+.trip-info ul {
+  list-style-type: none;
+}
+.trip-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 10px;
+  width: 33.33%;
+  font-size: 25px;
+}
+.trip-3 {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.trip-3 h5 {
+  color: #e85959;
+  margin-bottom: 50%;
+}
+.trip-3 button {
+  width: 30%;
+  border: 1px solid darkgoldenrod;
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+  box-shadow: -6px 6px 14px 1px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+}
+.trip-3 button:hover {
+  transform: translateY(-2px);
+  background-color: darkgoldenrod;
+  transition: all 0.5s ease-in-out;
+}
+.trip-info-title {
+  margin-bottom: 2%;
+}
+.trip-info-description {
+  margin-bottom: 10%;
+}
+.trip-info-details li {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .trip {
+    flex-direction: column;
+  }
+  .trip-3 h5 {
+    margin-bottom: 10px;
+  }
+  .trip-photo {
+    width: 100%;
+  }
+  .trip-3 {
+    width: 100%;
+  }
+  .trip-info {
+    width: 100%;
+  }
+}
+/*MODAL*/
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {
+  opacity: 0.7;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  background-color: #FED6BC;
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+input, textarea {
+  font-size: 20px;
+}
+.reset, .send {
+  width: 30%;
+  font-size: 35px;
+  cursor: pointer;
+}
+.send {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
