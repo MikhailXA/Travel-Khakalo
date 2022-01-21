@@ -1,4 +1,3 @@
-/* Style the video: 100% width and height to cover the entire window */
 .background-photo {
   position: fixed;
   top: 0;
@@ -16,6 +15,8 @@
   object-fit: fill;
   background: rgba(0,0,0,0.9);
 }
+
+/*CONTACT DATE*/
 .adress {
   position: absolute;
   top: 13%;
@@ -45,7 +46,6 @@
   color: black;
   background: rgba(255, 255, 255, 0.5);
   transform: translateY(-1px);
-
 }
 .adress-info p {
   line-height: 30px;
@@ -53,6 +53,8 @@
 .adress-info li:last-child {
   border-bottom: none;
 }
+
+/*SOCAIL BLOCK*/
 .social {
   position: absolute;
   top: 90%;
@@ -87,24 +89,20 @@ img {
   iframe {
     width: 400px;
     height: 250px;
-
   }
   .social {
     width: 100%;
   }
   .adress {
     width: 90%;
-  }+
-
+  }
 }
 @media screen and (max-height: 850px){
   iframe {
     top: 66%;
     height: 200px;
-
   }
   .adress-info p {
     line-height: 20px;
   }
-
 }

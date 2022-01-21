@@ -9,54 +9,49 @@
   <link rel="icon" type="image/png" href="../png/лого.png">
 </head>
 <body>
-<header id="slide" class="nav">
-  <nav id="w">
-    <div class="logo">
-      <a href="index.html">
-        <img src="../png/лого.png" alt="logo">
-      </a>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="tours.html">туры</a>
-      </li>
-      <li>
-        <a href="about.html">о нас</a>
-      </li>
-      <li>
-        <a href="gallery.html">галерея</a>
-      </li>
-      <li>
-        <a href="contacts.html">контакты</a>
-      </li>
-    </ul>
-    <div class="burger" onclick="openNav()">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <div id="myNav" class="overlay">
-
-      <!-- Button to close the overlay navigation -->
-      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="tours.html">Туры</a>
-        <a href="about.html">О нас</a>
-        <a href="gallery.html">Галерея</a>
-        <a href="contacts.html">Контакты</a>
+  <header id="slide" class="nav">
+    <nav id="w">
+      <div class="logo">
+        <a href="index.html">
+          <img src="../png/лого.png" alt="logo">
+        </a>
       </div>
-
-    </div>
-  </nav>
-</header>
+      <ul class="nav-links">
+        <li>
+          <a href="tours.html">туры</a>
+        </li>
+        <li>
+          <a href="about.html">о нас</a>
+        </li>
+        <li>
+          <a href="gallery.html">галерея</a>
+        </li>
+        <li>
+          <a href="contacts.html">контакты</a>
+        </li>
+      </ul>
+      <div class="burger" onclick="openNav()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="tours.html">Туры</a>
+          <a href="about.html">О нас</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+    </nav>
+  </header>
   <div class="tour">
     <div class="text-block">
       <p class="discover">discover</p>
     </div>
   </div>
-<section class="list">
+  <section class="list">
     <div class="trip">
       <div class="trip-photo">
         <img src="../photo/lam.jpg"  alt="trip">
@@ -69,14 +64,13 @@
             &#128197;  2 февраля — 6 февраля
           </li>
           <li>
-
             &#9733; Милан - Венеция
           </li>
         </ul>
       </div>
       <div class="trip-3">
         <h5 class="trip-price">$10.000</h5>
-        <button>book</button>
+        <button  id="myImg">book</button>
       </div>
     </div>
     <div class="trip">
@@ -91,14 +85,34 @@
             &#128197;  4 февраля — 14 февраля
           </li>
           <li>
-
             &#9733; Танзания
           </li>
         </ul>
       </div>
       <div class="trip-3">
         <h5 class="trip-price">$5.600</h5>
-        <button>book</button>
+        <button id="myImg">book</button>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content" id="img01">
+        <form>
+          <p>Оставьте свои данные, мы свяжемся с вами и обсудим ваш вопрос</p>
+          <p><b>Ваше имя:</b><br>
+            <input type="text">
+          </p>
+          <p><b>Ваш номер телефона:</b><br>
+            <input type="text">
+          </p>
+          <p><b>Ваш e-mail адрес:</b><br>
+            <input type="text">
+          </p>
+          <p><b>Ваши комментарии:</b><br>
+            <textarea name="comment" cols="80" rows="3"></textarea>
+          </p>
+          <p><input class="send" type="submit" value="Отправить"><input class="reset" type="reset" value="Очистить"></p>
+        </form>
       </div>
     </div>
     <div class="trip">
@@ -113,53 +127,49 @@
             &#128197;  5 марта — 9 марта
           </li>
           <li>
-
             &#9733; Кения
           </li>
         </ul>
       </div>
       <div class="trip-3">
         <h5 class="trip-price">$8.000</h5>
-        <button>book</button>
+        <button  id="myImg">book</button>
       </div>
     </div>
-</section>
-<footer>
-  <div class="footer">
-    <div class="footer-name">
-      <div class="logo">
-        <!--        <a href="#">travel</a>-->
-        <img src="../png/лого.png" alt="logo">
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="footer-name">
+        <div class="logo">
+          <img src="../png/лого.png" alt="logo">
+        </div>
+        <h3>travel</h3>
       </div>
-      <h3>travel</h3>
-    </div>
-    <div class="footer-sections">
-      <div class="footer-section-questions">
-        <p href="#">get to know</p>
-        <div class="string"></div>
-        <a href="#">contacts</a>
-        <a href="#">FAQs</a>
-        <a href="#">warrantly</a>
+      <div class="footer-sections">
+        <div class="footer-section-questions">
+          <p href="#">get to know</p>
+          <div class="string"></div>
+          <a href="#">contacts</a>
+          <a href="#">FAQs</a>
+          <a href="#">warrantly</a>
+        </div>
+        <div class="footer-section-email">
+          <p href="#">newsletter</p>
+          <div class="string"></div>
+          <input type="text" placeholder="Email address" name="mail" required>
+        </div>
       </div>
-      <div class="footer-section-email">
-        <p href="#">newsletter</p>
-        <div class="string"></div>
-        <input type="text" placeholder="Email address" name="mail" required>
+      <div class="footer-social">
+        <a href="#"><img src="../png/вотсап.png" alt="icon"></a>
+        <a href="#"><img src="../png/инста.png" alt="icon"></a>
+        <a href="#"><img src="../png/фейс.png" alt="icon"></a>
+        <a href="#"><img src="../png/pngwing.com.png" alt="icon"></a>
+        <a href="#"><img src="../png/телега.png" alt="icon"></a>
       </div>
+      <h6>2022,Grodno.ItAcademy.All rights reserved</h6>
     </div>
-    <div class="footer-social">
-      <a href="#"><img src="../png/вотсап.png" alt="icon"></a>
-      <a href="#"><img src="../png/инста.png" alt="icon"></a>
-      <a href="#"><img src="../png/фейс.png" alt="icon"></a>
-      <a href="#"><img src="../png/pngwing.com.png" alt="icon"></a>
-      <a href="#"><img src="../png/телега.png" alt="icon"></a>
-    </div>
-    <h6>2022,Grodno.ItAcademy.All rights reserved</h6>
-  </div>
-</footer>
-
+  </footer>
 <script src="../js/index.js"></script>
 <script src="../js/tours.js"></script>
-
 </body>
 </html>

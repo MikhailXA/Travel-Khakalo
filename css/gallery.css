@@ -6,13 +6,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-/* Bottom right text */
+/* MAIN PHOTO */
 .text-block {
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%,-50%);
-
   background-color: transparent;
   color: white;
 }
@@ -24,16 +23,10 @@ body {
   text-transform: uppercase;
   font-style: oblique;
 }
-
-
 .tour {
-  /* The image used */
   background-image: url("../photo/gallery.jpg");
-  /* Full height */
   height: 100vh;
   z-index: -1;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,33 +35,31 @@ body {
 .g-sub h2 {
   background-color: white;
   color: black;
-  font-size: 5vw; /* Responsive font size */
+  font-size: 5vw;
   font-weight: bold;
-  margin: 0 auto; /* Center the text container */
+  margin: 0 auto;
   padding: 10px;
   width: 50%;
-  text-align: center; /* Center text */
-  position: absolute; /* Position text */
-  top: 50%; /* Position text in the middle */
-  left: 50%; /* Position text in the middle */
-  transform: translate(-50%, -50%); /* Position text in the middle */
-  mix-blend-mode: screen; /* This makes the cutout text possible */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
 }
+
+/*GALLERY*/
 .portfolio {
   background-color: white;
   text-align: center;
-  /* min-width: 390px;*/
   padding-top: 100px;
-
 }
-
 .gallery {
-  font-size: 0; /*delete spaces between child inline-blocks*/
-  max-width: 1590px; /*360 x 3 fixed-width + 3 x (15*2) paddings */
+  font-size: 0;
+  max-width: 1590px;
   margin: 0 auto;
   position: relative;
 }
-
 .image-container {
   display: inline-block;
   vertical-align: top;
@@ -77,13 +68,11 @@ body {
   cursor: pointer;
   border: 3px solid black;
 }
-
 .preview {
   max-width: 500px;
   width: 100%;
   object-fit: cover;
 }
-
 .image-container:after {
   width: 100%;
   height: 100%;
@@ -96,23 +85,19 @@ body {
   transition: all 450ms ease-out;
   transform: rotateY(90deg);
 }
-
 .image-container:hover:after {
   opacity: 0.9;
   transform: rotateY(180deg);
 }
-
 .hover-buttons {
   position: absolute;
   top: 45%;
   left: 45%;
   display: none;
 }
-
 .image-container:hover .hover-buttons {
   display: inline-block;
 }
-
 .zoom {
   position: absolute;
   width: 40px;
@@ -121,8 +106,6 @@ body {
   border-radius: 50%;
   z-index: 2;
 }
-
-/*lesson 11*/
 .overlay {
   position: fixed;
   top: 0;
@@ -133,17 +116,14 @@ body {
   background: black;
   display: none;
 }
-
 .overlay.active {
   display: block;
 }
-
 .popup {
   position: fixed;
   width: 100%;
   max-width: 1170px;
   border: 1px solid grey;
-
   box-sizing: border-box;
   top: 50%;
   left: 50%;
@@ -151,11 +131,9 @@ body {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
   display: none;
 }
-
 .popup.active {
   display: block;
 }
-
 .full-image {
   width: 1170px;
   max-width: 100%;
@@ -164,11 +142,9 @@ body {
   object-fit: cover;
   display: none;
 }
-
 .full-image.active {
   display: block;
 }
-
 .close {
   position: absolute;
   top: -20px;
@@ -179,26 +155,24 @@ body {
   background: black;
   color: white;
 }
-
 .close:after {
   content: "\2716";
-
   display: inline-block;
   font-size: 15px;
   vertical-align: middle;
 }
-
 .close:hover {
   background: #f74c26;
   cursor: pointer;
 }
-
 @media (min-width: 700px) {
   .preview {
     max-height: 260px;
     min-height: 260px;
   }
 }
+
+/*IDEA OF COMPANY*/
 .phylosophy {
   max-width: 700px;
   margin: 0 auto;
@@ -214,7 +188,6 @@ body {
   font-size: 30px;
   margin-top: 100px;
   margin-right: 20px;
-
 }
 .phylosophy-flex {
   display: flex;
